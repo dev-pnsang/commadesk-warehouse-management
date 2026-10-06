@@ -1,0 +1,28 @@
+{
+  "name": "Heineken Vietnam — Quản Lý Kho Bia & Vận Hành Chuỗi Cung Ứng",
+  "short_name": "Heineken Warehouse",
+  "description": "Hệ thống điều phối và quản trị kho bia Heineken Vietnam: Quản lý bom bia tươi Keg 20L/50L, thùng lon Silver, nhiệt độ kho mát 4°C - 6°C.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#002811",
+  "theme_color": "#008234",
+  "icons": [
+    {
+      "src": "./icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./favicon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml"
+    }
+  ]
+}

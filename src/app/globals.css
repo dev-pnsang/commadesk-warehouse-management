@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-hnk-green: #008234;
+  --color-hnk-green-hover: #006629;
+  --color-hnk-green-dark: #00441b;
+  --color-hnk-green-night: #031e0f;
+  --color-hnk-green-light: #e8f5ec;
+  --color-hnk-green-border: #b8dec4;
+  --color-hnk-star-red: #d3122a;
+  --color-hnk-star-red-hover: #b80c21;
+  --color-hnk-gold: #c69214;
+  --color-hnk-border: #d7e4dc;
+  --color-hnk-text-dark: #0e2417;
+  --color-hnk-text-muted: #5e7968;
+
+  --font-sans: var(--font-roboto), 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+/* Base resets & typography */
+html,
+body {
+  font-family: var(--font-sans);
+  color: var(--color-hnk-text-dark);
+  background-color: #ffffff;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Animations */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(211, 18, 42, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(211, 18, 42, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(211, 18, 42, 0);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 120s linear infinite;
+}
+
+.animate-fade-slide-up {
+  animation: fade-slide-up 0.35s ease both;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
+
+/* Custom Slim Scrollbar cho Table cuộn ngang */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f4f8f5;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #b8dec4;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #008234;
+}
+

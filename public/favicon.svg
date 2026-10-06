@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="fav-bg-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#006b2b"/>
+      <stop offset="70%" stop-color="#00441b"/>
+      <stop offset="100%" stop-color="#00240e"/>
+    </radialGradient>
+    <linearGradient id="fav-silver-rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#a7f3d0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="fav-bottle-glass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#005a24"/>
+      <stop offset="30%" stop-color="#00a843"/>
+      <stop offset="70%" stop-color="#007a30"/>
+      <stop offset="100%" stop-color="#003816"/>
+    </linearGradient>
+    <linearGradient id="fav-cap-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="40%" stop-color="#ffffff"/>
+      <stop offset="80%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Nền Huy Hiệu Hình Vuông Bo Góc Nhẹ Sang Trọng (Width = Height) -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#fav-bg-grad)" stroke="url(#fav-silver-rim)" stroke-width="1.8"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="12.5" fill="none" stroke="#00a843" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Logo Chai Bia Heineken -->
+  <g transform="translate(0, 0)">
+    <!-- 1. Nắp chai bạc -->
+    <rect x="28" y="7" width="8" height="5" rx="1" fill="url(#fav-cap-grad)"/>
+
+    <!-- 2. Thân chai bia -->
+    <path d="M29 12 L35 12 L37 25 C37 29 44 33 45 37 L45 53 C45 56 42 58 32 58 C22 58 19 56 19 53 L19 37 C20 33 27 29 27 25 Z"
+          fill="url(#fav-bottle-glass)"/>
+
+    <!-- 3. Vệt sáng phản quang thủy tinh -->
+    <path d="M29 14 L30 14 L30 25 C30 28 23 32 21 37 L21 52 C21 54 22 55 24 55 L22 55 C20 55 20 53 20 51 L20 37 C21 33 28 29 28 25 Z"
+          fill="#ffffff" opacity="0.35"/>
+
+    <!-- 4. Nhãn cổ chai -->
+    <path d="M28.5 18 L35.5 18 L36 23 L28 23 Z" fill="#002d12" stroke="#ffffff" stroke-width="0.6"/>
+
+    <!-- 5. Nhãn chính thân chai -->
+    <ellipse cx="32" cy="42" rx="10" ry="10.5" fill="#003816" stroke="#ffffff" stroke-width="1.2"/>
+    <ellipse cx="32" cy="42" rx="8.5" ry="9" fill="none" stroke="#6ee7b7" stroke-width="0.5"/>
+
+    <!-- Dải ruy băng đen nhãn -->
+    <rect x="22" y="40" width="20" height="5" rx="1.5" fill="#09140d" stroke="#ffffff" stroke-width="0.6"/>
+
+    <!-- Ngôi sao đỏ Heineken rực rỡ ở tâm nhãn -->
+    <path d="M32 34.5 L33 37 L35.5 37 L33.5 38.5 L34.2 41 L32 39.5 L29.8 41 L30.5 38.5 L28.5 37 L31 37 Z"
+          fill="#d3122a" stroke="#ffffff" stroke-width="0.5"/>
+  </g>
+</svg>
